@@ -1,10 +1,10 @@
 using BTCPayServer.Abstractions.Contracts;
 using BTCPayServer.Abstractions.Models;
 using BTCPayServer.Abstractions.Services;
-using BTCPayServer.Plugins.Template.Services;
+using BTCPayServer.Plugins.Galoy.Services;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace BTCPayServer.Plugins.Template;
+namespace BTCPayServer.Plugins.Galoy;
 
 public class Plugin : BaseBTCPayServerPlugin
 {

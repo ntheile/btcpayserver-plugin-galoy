@@ -1,10 +1,10 @@
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using BTCPayServer.Plugins.Template.Data;
+using BTCPayServer.Plugins.Galoy.Data;
 using Microsoft.EntityFrameworkCore;
 
-namespace BTCPayServer.Plugins.Template.Services;
+namespace BTCPayServer.Plugins.Galoy.Services;
 
 public class MyPluginService
 {

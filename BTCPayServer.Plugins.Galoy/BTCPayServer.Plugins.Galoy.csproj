@@ -6,8 +6,8 @@
 
   <!-- Plugin specific properties -->
   <PropertyGroup>
-    <Product>BTCPay Server Plugin Template</Product>
-    <Description>A template for your own BTCPay Server plugin.</Description>
+    <Product>Galoy Plugin for BTCPay</Product>
+    <Description>Galoy API Plugin</Description>
     <Version>1.0.0</Version>
   </PropertyGroup>
 

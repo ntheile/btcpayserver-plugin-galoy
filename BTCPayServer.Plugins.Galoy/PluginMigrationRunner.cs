@@ -1,11 +1,11 @@
 ﻿using System.Threading;
 using System.Threading.Tasks;
 using BTCPayServer.Abstractions.Contracts;
-using BTCPayServer.Plugins.Template.Services;
+using BTCPayServer.Plugins.Galoy.Services;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Hosting;
 
-namespace BTCPayServer.Plugins.Template;
+namespace BTCPayServer.Plugins.Galoy;
 
 public class PluginMigrationRunner : IHostedService
 {
