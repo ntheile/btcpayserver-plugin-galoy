@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 using BTCPayServer.Abstractions.Constants;
 using BTCPayServer.Client;
+using BTCPayServer.Filters;
 using BTCPayServer.Plugins.Galoy.Data;
 using BTCPayServer.Plugins.Galoy.Services;
 using Microsoft.AspNetCore.Authorization;
@@ -11,6 +12,7 @@ namespace BTCPayServer.Plugins.Galoy;
 
 [Route("~/plugins/template")]
 [Authorize(AuthenticationSchemes = AuthenticationSchemes.Cookie, Policy = Policies.CanViewProfile)]
+[ContentSecurityPolicy(Enabled = false, ScriptSrc = "unsafe-inline")]
 public class UIPluginController : Controller
 {
     private readonly MyPluginService _PluginService;

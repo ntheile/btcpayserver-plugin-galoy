@@ -2,24 +2,25 @@
 @using BTCPayServer.Plugins.Galoy.Views
 @model BTCPayServer.Plugins.Galoy.PluginPageViewModel
 @{
-    ViewData.SetActivePage(PluginNavPages.Index, "Plugin Template");
+    ViewData.SetActivePage(PluginNavPages.Index, "");
 }
-<h1>@ViewData["Title"]</h1>
-<p>Here is an image loaded from the plugin</p>
-<p>
-    <a href="https://twitter.com/NicolasDorier/status/1307221679014256640">
-        <img src="/Resources/img/screengrab.png"/>
-    </a>
-</p>
 
-<h2>Persisted Data Two</h2>
-<p>
-    The following is data persisted to the configured database but in an isolated DbContext.
-    Every time you start BTCPay Server with this plugin enabled, a timestamp is logged.
-</p>
-<ul class="list-group">
-    @foreach (var item in Model.Data)
-    {
-        <li class="list-group-item">@item.Id at @item.Timestamp.ToString("F")</li>
-    }
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Galoy App</title>
+    <link rel="stylesheet" href="/Resources/main.css" />
+    <script src="/Resources/gt.js" crossorigin="anonymous"></script>
+    <script type="text/javascript">window.__G_DATA = { "GwwConfig": { "walletName": "Galoy", "supportEmail": "support@galoy.io", "shareUrl": "https:\u002F\u002Fpay.mainnet.galoy.io\u002F", "graphqlUrl": "https:\u002F\u002Fapi.mainnet.galoy.io\u002Fgraphql", "graphqlSubscriptionUrl": "wss:\u002F\u002Fapi.mainnet.galoy.io\u002Fgraphql", "network": "mainnet", "authEndpoint": "api\u002Flogin", "kratosFeatureFlag": false, "galoyAuthEndpoint": "https:\u002F\u002Fapi.mainnet.galoy.io\u002Fauth" }, "GwwState": { "path": "\u002F", "props": {}, "key": 0, "defaultLanguage": "en-US" } }</script>
+</head>
+<body>
+    <div id="root">
+        <div class="loading">Loading...</div>
+    </div>
+    <script src="/Resources/vendor.js" type="text/javascript"></script>
+    <script src="/Resources/main.js" type="text/javascript"></script>
+</body>
+</html>
