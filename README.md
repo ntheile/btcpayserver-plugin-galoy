@@ -33,3 +33,7 @@ dotnet sln add ../BTCPayServer.Plugins.Galoy -s Plugins
 - Click the debug button in vscode
 - Click "Play" button (.NET Core launch (web))
 7. Enable plugin in web. This will open the web browser. Add the Galoy plugin
+
+# Todo
+- [] make galoy instance configurable (mainnet, staging, bitcoin jungle, custom endpoint etc...)
+- [] tighter integration with BTCPay data, like BTCPay invoices id's
